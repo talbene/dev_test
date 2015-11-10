@@ -277,6 +277,11 @@ a:link, a:hover, a:active {
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
+html {
+    background: url("../images/bgImage.jpg") top center no-repeat;
+    background-size:  cover;
+    margin:0;
+}
 
 body {
     width: 100%;
@@ -287,18 +292,11 @@ body {
 
 }
 
-
-html {
-    background: url("../images/bgImage.jpg") top center no-repeat;
-    background-size:  cover;
-    margin:0;
-}
-
-
 .wrapper {
-    width: 74%;
+    
+    max-width: 970px;
     margin: 0 auto;
-    border:black 1px solid;
+    border: black 1px solid;
 }
 
 /*common module---------------->*/
@@ -320,7 +318,7 @@ h1 {
     font-size: 3em;
     text-align: center;
     font-weight: bold;
-    letter-spacing:5.4px;
+    letter-spacing: 3.1px;
     margin: 0px;
 }
 
@@ -329,9 +327,10 @@ h3 {
     font-size: 1.8em;
     text-align: center;
     font-weight: normal;
-    letter-spacing:2.7px;
+    letter-spacing:1.2px;
     margin: 0px;
 }
+
 h2 {
     color: #cc3333;
     font-size: 2.25em;
@@ -371,12 +370,12 @@ p{
     width: 50%;
     margin: 0 auto;
     display: block;
-    margin-top:50px;
+    margin-top: 3em;
 }
 
 .videoBtn{
-    margin-top: 30px;
-    margin-bottom: 110px;
+    margin-top: 1.9em;
+    margin-bottom: 6em;
 }
 
 /*getStart---------------->*/
@@ -385,11 +384,11 @@ p{
 }
 
 .box header {
-    height: 70px;
+    height: 4.3em;
     border-radius: 10px 10px 0px 0px;
     background: #0066cc;
     position: relative;
-    padding: 20px;
+    padding: 1.25em;
 
 }
 
@@ -409,8 +408,7 @@ header:after {
 
 .wix header {
     background: #0099ff;
-    padding: 15px;
-}
+ }
 
 .wix header:after {
     border-top: solid 5px #0099ff;
@@ -425,14 +423,14 @@ header:after {
 }
 .box + button {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 0.75em;
 
 }
 .box p {
     text-align: left;
     height: 15em;
     overflow: hidden;
-    padding: 15px;
+    padding: 0.9em;
 }
 .box img {
     width: 80%;
@@ -446,23 +444,23 @@ header:after {
 
 .sitebuilder {
     float:left;
-    width:28%; 
+    width:31.5%; 
     
 }
 
 .wix {
     display: inline-block;
     margin:0 auto;
-    width:30%;
+    width:31.5%;
 
 }
 
 .web {
     float:right;
-    width:30%;
+    width:31.5%;
 }
 
-a.firstWord {
+a.link {
     color: #0099ff;
 }
 
@@ -471,8 +469,8 @@ a.firstWord {
 /*contactForm---------------->*/
 .contactForm h2 {
     text-align: left;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 0.75em;
+    margin-top: 2em;
 }
 
 .contactForm{
@@ -487,8 +485,7 @@ a.firstWord {
 .contactText {
     width: 30%;
     float:left;
-    line-height: 1.5
-    
+    line-height: 1.4;   
 }
 
 .contactText>p {
@@ -497,12 +494,12 @@ a.firstWord {
 
 .name,
 .email {
-  width:49%;
-  border:1px #c1c1c1 solid;
-  background:#fff;
-  padding:15px;
+  width: 49%;
+  border: 1px #c1c1c1 solid;
+  background: #fff;
+  padding: 0.9em;
   font-size:1em;
-  color:#111;
+  color: #111;
 }
 
 
@@ -540,30 +537,29 @@ a.firstWord {
 }
 
 .mainArea, .subject {
-  width:100%;
-  margin-top:20px;
-  border:1px #c1c1c1 solid;
-  background:#fff;
-  padding:15px;
-  color:#111;
+  width: 100%;
+  margin-top: 1.25em;
+  border: 1px #c1c1c1 solid;
+  background: #fff;
+  padding :0.9em;
+  color: #111;
 }
 
 .mainArea {
-  height:147px;
+  height: 9em;
   resize:none;
 }
 
 .formBtn {
   width:30%;
-  padding:15px;
-  text-align:center;
-  margin-top: 20px;
-  border:1px #c1c1c1 solid;
-  background:#fff;
-  padding:20px;
-  font-size:1em;
+  padding: 1.25em;
+  text-align: center;
+  margin-top: 1.25em;
+  border: 1px #c1c1c1 solid;
+  background: #fff;
+  font-size: 1em;
   line-height: 1em;
-  color:#444444;
+  color: #444444;
   cursor:pointer;
   float: right;
 }
@@ -572,13 +568,13 @@ a.firstWord {
     text-align: left;
     color: #444444;
     font-weight: bold;
-    margin-top: 80px;
-    margin-bottom: 28px;
+    margin-top: 2em;
+    margin-bottom: 1.75em;
 }
 
 .about{
     overflow: hidden;
-    padding-bottom: 30px;
+    padding-bottom: 1.8em;
 }
  .media {
     overflow: hidden;
@@ -593,9 +589,9 @@ a.firstWord {
     width: 79%;
     text-align: left;
     float: right;
-    line-height: 1.9em;
+    line-height: 1.8em;
     font-size: 0.9em;
-    color:#333333;
+    color: #333333;
     font-weight: normal;
     letter-spacing: 0.7px;
 }
@@ -606,17 +602,18 @@ a.firstWord {
 footer{
     width: 100%;
     background:#23354f;
-    padding: 10px;
+    padding: 1.2em;
     overflow: hidden;
+    height: 3.75em;
 }
 
 .icon{
     color: #fff;
-    padding-left:87.5%;
+    padding-left: 84%;
 }
 
 i{
-    margin-right: 5px;
+    margin-right: 0.3em;
 }
 
 
@@ -624,10 +621,128 @@ i{
 
 
 
+ 
 
 
 
 
+
+
+@media only screen and (min-width : 300px) and (max-width : 480px) {
+/*--- Mobile portrait ---*/
+.wrapper {
+    
+    width:98%;
+    margin: 0 auto;
+    border: black 1px solid;
+}
+  
+  h1 {
+    font-size: 2.3em;
+    letter-spacing: 0px;
+}
+
+h3 {
+
+    font-size: 1.35em;
+    letter-spacing:0px;
+}
+
+}
+
+
+@media only screen and (min-width : 481px) and (max-width : 595px) {
+/*--- Mobile landscape ---*/
+.wrapper {
+    
+    width:98%;
+    margin: 0 auto;
+    border: black 1px solid;
+}
+  
+  h1 {
+    font-size: 2.3em;
+    letter-spacing: 0px;
+}
+
+h3 {
+
+    font-size: 1.35em;
+    letter-spacing:0px;
+}
+
+
+}
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+/*--- Small tablet portrait ---*/
+.wrapper {
+    
+    max-width: 98%;
+    margin: 0 auto;
+    border: black 1px solid;
+}
+  
+  h1 {
+    font-size: 2.3em;
+    letter-spacing: 0px;
+}
+
+h3 {
+
+    font-size: 1.35em;
+    letter-spacing:0px;
+}
+
+}
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+/*--- Tablet portrait ---*/
+.wrapper {
+    
+    max-width: 98%;
+    margin: 0 auto;
+    border: black 1px solid;
+}
+  
+  h1 {
+    font-size: 2.3em;
+    letter-spacing: 0px;
+}
+
+h3 {
+
+    font-size: 1.35em;
+    letter-spacing:0px;
+}
+
+
+}
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+/*--- Small tablet landscape ---*/
+.wrapper {
+    
+        max-width: 98%;
+
+    margin: 0 auto;
+    border: black 1px solid;
+}
+  
+  h1 {
+    font-size: 2.3em;
+    letter-spacing: 0px;
+}
+
+h3 {
+
+    font-size: 1.35em;
+    letter-spacing:0px;
+}
+  
+
+
+
+
+}
 /* Landscape mobile & down */
 @media (max-width: 30em) {
   .wrap h1 {
@@ -635,10 +750,23 @@ i{
     letter-spacing:0;
   }
   
-  .wrap p {
-    font-size:1.1em;
-    line-height:1.4em;
-  }
+  h1 {
+    color: #cc3333;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3.1px;
+    margin: 0px;
+}
+
+h3 {
+
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing:1.2px;
+    margin: 0px;
+}
   
   .name,.email {
     width:100%;
