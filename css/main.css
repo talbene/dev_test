@@ -302,8 +302,8 @@ body {
 /*common module---------------->*/
 
 button {
-    height: 50px;
-    width: 300px;
+    height: 3em;
+    width: 32%;
     color: #fff;
     font-size: 1.125;
     font-weight: bold;
@@ -351,13 +351,16 @@ p{
     font-size: 1em;
     color: #333333;
     font-weight: 200;
+    text-align: justify;
 }
 
 
 /*introduction---------------->*/
 .introduction {
-     text-align: justify;
+     text-align: center;
 }
+
+
 
 
 /*watchVideo---------------->*/
@@ -379,6 +382,11 @@ p{
 }
 
 /*getStart---------------->*/
+
+.getStart h2 {
+  text-align: left;
+}
+
 .startHead{
     color: #444444;
 }
@@ -465,8 +473,8 @@ a.link {
 }
 
 
-
 /*contactForm---------------->*/
+
 .contactForm h2 {
     text-align: left;
     margin-bottom: 0.75em;
@@ -485,11 +493,13 @@ a.link {
 .contactText {
     width: 30%;
     float:left;
-    line-height: 1.4;   
+    line-height: 1.4; 
+
 }
 
 .contactText>p {
     margin-top: 0px;
+    text-align: left;
 }
 
 .name,
@@ -564,15 +574,15 @@ a.link {
   float: right;
 }
 /*about---------------->*/
-.about h4{
+.about h4 {
     text-align: left;
     color: #444444;
     font-weight: bold;
     margin-top: 2em;
-    margin-bottom: 1.75em;
+    margin-bottom: 1em;
 }
 
-.about{
+.about {
     overflow: hidden;
     padding-bottom: 1.8em;
 }
@@ -582,202 +592,236 @@ a.link {
 
 .aboutImg{
     width: 17%;
+    height: 10.5em;
     float: left;
+    background: url("../images/aboutImg.jpg") top center no-repeat;
+    background-size:  cover;
+    margin:0;
 }
+
 .aboutText {
    
     width: 79%;
-    text-align: left;
     float: right;
     line-height: 1.8em;
     font-size: 0.9em;
     color: #333333;
-    font-weight: normal;
+    font-weight: 200;
     letter-spacing: 0.7px;
 }
 
-
 /*footer---------------->*/
 
-footer{
+footer {
     width: 100%;
     background:#23354f;
-    padding: 1.2em;
     overflow: hidden;
-    height: 3.75em;
-}
+ }
 
-.icon{
+.icon {
     color: #fff;
-    padding-left: 84%;
+    height: 3.75em;
+    padding: 1.2em 0;
 }
 
-i{
-    margin-right: 0.3em;
+i {
+    float: right;
+    margin-left: 1em;
 }
 
+/*@media-query---------------->*/
 
 
-
-
-
- 
-
-
-
-
-
-
-@media only screen and (min-width : 300px) and (max-width : 480px) {
-/*--- Mobile portrait ---*/
+@media only screen and (min-width : 800px) and (max-width : 970px) {
+/*--- Small tablet landscape ---*/
 .wrapper {
-    
-    width:98%;
-    margin: 0 auto;
-    border: black 1px solid;
-}
-  
-  h1 {
-    font-size: 2.3em;
-    letter-spacing: 0px;
-}
-
-h3 {
-
-    font-size: 1.35em;
-    letter-spacing:0px;
-}
-
-}
-
-
-@media only screen and (min-width : 481px) and (max-width : 595px) {
-/*--- Mobile landscape ---*/
-.wrapper {
-    
-    width:98%;
-    margin: 0 auto;
-    border: black 1px solid;
-}
-  
-  h1 {
-    font-size: 2.3em;
-    letter-spacing: 0px;
-}
-
-h3 {
-
-    font-size: 1.35em;
-    letter-spacing:0px;
-}
-
-
-}
-@media only screen and (min-width : 595px) and (max-width : 690px) {
-/*--- Small tablet portrait ---*/
-.wrapper {
-    
     max-width: 98%;
-    margin: 0 auto;
-    border: black 1px solid;
 }
-  
+
   h1 {
-    font-size: 2.3em;
-    letter-spacing: 0px;
+    font-size: 2.5em;
+    letter-spacing:0.02em; 
 }
 
 h3 {
-
-    font-size: 1.35em;
-    letter-spacing:0px;
+    font-size: 1.5em;
+    letter-spacing:0.01em; 
 }
 
 }
+
 @media only screen and (min-width : 690px) and (max-width : 800px) {
 /*--- Tablet portrait ---*/
 .wrapper {
-    
     max-width: 98%;
-    margin: 0 auto;
-    border: black 1px solid;
 }
-  
-  h1 {
-    font-size: 2.3em;
-    letter-spacing: 0px;
+
+ h1 {
+    font-size: 2.2em;
+    letter-spacing:0.02em; 
 }
 
 h3 {
-
-    font-size: 1.35em;
-    letter-spacing:0px;
+    font-size: 1.3em;
+    letter-spacing:0.01em; 
 }
 
-
+h2 {
+    font-size: 2em;
 }
 
-@media only screen and (min-width : 800px) and (max-width : 1024px) {
-/*--- Small tablet landscape ---*/
+.box p {
+  font-size: 0.8em;
+}
+
+}
+  
+@media only screen and (min-width : 590px) and (max-width : 690px) {
+/*--- Small tablet portrait ---*/
+
 .wrapper {
-    
-        max-width: 98%;
-
-    margin: 0 auto;
-    border: black 1px solid;
-}
-  
-  h1 {
-    font-size: 2.3em;
-    letter-spacing: 0px;
+    max-width: 98%;
 }
 
-h3 {
-
-    font-size: 1.35em;
-    letter-spacing:0px;
+p{
+  font-size: 0.85em
 }
-  
 
-
-
-
-}
-/* Landscape mobile & down */
-@media (max-width: 30em) {
-  .wrap h1 {
-    font-size:2.3em;
-    letter-spacing:0;
-  }
-  
-  h1 {
-    color: #cc3333;
-    font-size: 3em;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 3.1px;
-    margin: 0px;
+ h1 {
+    font-size: 2.2em;
+    letter-spacing:0.02em; 
 }
 
 h3 {
-
-    font-size: 1.8em;
-    text-align: center;
-    font-weight: normal;
-    letter-spacing:1.2px;
-    margin: 0px;
+    font-size: 1.3em;
+    letter-spacing:0.01em; 
 }
-  
-  .name,.email {
-    width:100%;
+
+h2 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+.contactText {
+  line-height: 1.4;
+}
+
+.box p {
+  font-size: 0.7em;
+  padding: 0.5em;
+}
+
+.aboutText {
+   
+    width: 79%;
+    float: right;
+    line-height: 1.5em;
+    font-size: 0.8em;
+}
+
+}
+
+
+@media only screen and (min-width : 300px) and (max-width : 590px) {
+/*--- Mobile portrait/Landscape ---*/
+.wrapper {
+    max-width: 98%;
+}
+
+p{
+  font-size: 0.85em
+}
+
+ h1 {
+    font-size: 2.2em;
+    letter-spacing:0.02em; 
+}
+
+h3 {
+    font-size: 1.3em;
+    letter-spacing:0.01em; 
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+.contactText {
+  line-height: 1.4;
+}
+
+.box p {
+  font-size: 0.7em;
+  padding: 0.5em;
+  height: 6em;
+  margin-top: 1em;
+}
+
+.aboutText {
+   
+    width: 79%;
+    float: right;
+    line-height: 1.5em;
+    font-size: 0.8em;
+}
+
+.contactField{
+    width: 100%;
+    float: none;
+}
+
+.contactText {
+    width: 100%; 
+        float: none;
+ 
+}
+ .name,.email {
+    width: 100%;
   }
   
   .email {
-    margin-top:20px;
+    margin-top: 1.25em;
   }
-  
-  .bigBtn {
-    font-size:1.3em;
-  }
-  
+
+.wix {
+    width: 100%;
 }
+
+.web, .sitebuilder {
+    float: none;
+    width: 100%;
+}
+
+.box {
+  margin-top: 1.4em;
+}
+
+.box img {
+  width: 50%;
+}
+
+.contactField {
+  margin-top: 1.5em;
+}
+
+.aboutImg {
+width: 100%;
+height: 10em;
+float: none;
+}
+
+.aboutText {
+width: 100%;
+float: none;
+margin-top: 1em;
+}
+
+}
+
