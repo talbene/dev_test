@@ -1,6 +1,4 @@
 
-
-
 function postData(e) {
 
     // validation
