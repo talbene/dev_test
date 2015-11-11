@@ -1,43 +1,42 @@
-//ajax
 
-function init()  {
-  //init();
-  //doSomethingElse();
 
- var options = {
- 	done: function(json){
- 		//console.log(json);
-        var text =  json.notification;
-        console.log(text);
-        var element = document.querySelector(".notifications");
-        element.textContent = text;
- 	},
- 	fail: function(err){
- 		console.log(err);
- 	}
- }
 
-    UTILS.ajax("data/config.json", options);
+
+document.addEventListener("DOMContentLoaded", function(){
+    var form = document.querySelector("form")
+
+    form.addEventListener("submit",postData);
+});
+
+function postData(formsubmission){
+
+    var name = document.querySelector(".name").value;
+    var email = document.querySelector(".email").value;
+    var subject = document.querySelector(".subject").value;
+    var message =document.querySelector(".mainArea").value;
+
+
+    // Parameters to send to PHP script.
+    var params = "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message;
+    console.log(params)
+    var http = new XMLHttpRequest();
+
+    http.open("POST","server.php",true);
+
+    // Set headers
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+
+    http.onreadystatechange = function(){
+        if(http.readyState == 4 && http.status == 200){
+            document.querySelector(".response").innerHTML = http.responseText;
+        }
+
+
+    };
+    http.send(params);
 
 }
 
-window.addEventListener("load", init, false);
-
-//iframe
-
-
-var elementList = document.querySelector(".link");
-//console.log(elementList);
-elementList.addEventListener("change", select, false);
-
-function select(e) {
-    e.preventDefault();
-    var target = e.target.value;
-    var frame = document.querySelector("iframe");
-    frame.setAttribute("src", target);
-}
-
-UTILS.addEvent(elm, type, handler);
-UTLIS.removeEvent(elm, type, handler);
 
 
