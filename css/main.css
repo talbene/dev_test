@@ -518,7 +518,7 @@ a.link {
 ::-moz-placeholder {  /* Firefox 19+ */
    color: #9a9a9a; 
    font-weight: normal;
-      font-size: 0.875em;
+    font-size: 0.875em;
 
 }
 
@@ -526,7 +526,6 @@ a.link {
    color: #9a9a9a;
    font-weight: normal;
    font-size: 0.875em;
-
 }
 
 .name {
@@ -564,6 +563,12 @@ a.link {
   cursor:pointer;
   float: right;
 }
+
+.response{
+    margin: 0px;
+    visibility: hidden;
+}
+
 /*about---------------->*/
 
 .about h4 {
