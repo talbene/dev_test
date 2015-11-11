@@ -15,6 +15,12 @@ function postData(formsubmission){
     var subject = document.querySelector(".subject").value;
     var message =document.querySelector(".mainArea").value;
 
+    // Checks if fields are filled-in or not, returns response "<p>Please enter your details.</p>" if not.
+    if(name == "" || email == "" || subject == "" || message == ""){
+        document.querySelector(".response").innerHTML = "Please enter your details.";
+        return;
+    }
+
 
     // Parameters to send to PHP script.
     var params = "name=" + name + "&email=" + email + "&subject=" + subject + "&message=" + message;
